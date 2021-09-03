@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conspiracy Goose</title>
-</head>
-<body>
-  <h1>About the Conspiracy Goose</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<h1>What you need to know about the TRUTH!</h1>
+
+<p class="about">
+  Bird watching goes both ways. Birds. Aren't. Real. Wake up people! The last bird died in 1985!
+<br>
+  Someone is trying to silence the truth and I just can't let that happen.
+</p>
+    <img src="{% static 'images/ben.png' %}" alt="ben">
+  <br>
+A fellow truther
+
+{% endblock %}

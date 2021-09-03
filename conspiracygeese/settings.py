@@ -125,9 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# LOGIN_URL = 'home'
-# LOGIN_REDIRECT_URL = 'cats_index'
-# LOGOUT_REDIRECT_URL = 'home'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'list'
+LOGOUT_REDIRECT_URL = 'home'
 
 # import django_heroku
 # django_heroku.settings(locals())

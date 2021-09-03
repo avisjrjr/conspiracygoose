@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type='text/css' href="{% static 'css/home.css' %}">
+{% endblock head %}
+{% block content %}
+<div class='header'>
+  <h1 class='header-text'>Recent Truths</h1>
+</div>
+
+<section class='conspiracy-list'>
+  {% for conspiracy in conspiracy_list %}
+    <a href="{% url 'conspiracy_detail' conspiracy.id %}">
+      <div class='card'>
+          <div>
+            {% if conspiracy.photo.url %}
+              <img class='image' src="{{ conspiracy.photo.url }}" alt="">
+            {% else %}
+              <img class='image' src="" alt="">
+            {% endif %}
+            <h2 class='conspiracy-title'>{{ conspiracy.title }}</h2>
+            <p class='conspiracy-desc'>{{ conspiracy.description }}</p>
+            <p class='conspiracy-author'>Written By: {{ conspiracy.author }}</p>
+            <p class='conspiracy-date'>Posted On: {{ conspiracy.date }}</p>
+          </div>
+      </div>
+    </a>
+  {% endfor %}
+</section>
+{% endblock content %}
