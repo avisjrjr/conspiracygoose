@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-text {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .conspiracy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: #da5db0;
+    width: 30rem;
+    padding: 0.75rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    box-shadow: 8px 8px 8px #2a175f;
+  }
+  
+  .image {
+    width: 27rem;
+    border-radius: 1rem;
+  }
+  
+  .conspiracy-title {
+    font-size: 1.6rem;
+  }
+
+  .preview {
+    font-size: 1.1rem;
+  }
+  
+  .conspiracy-date, .conspiracy-author {
+    font-size: 0.9rem;
+  }
+  
+  .conspiracy-desc {
+    font-size: 1.1rem;
+  }
+  .card:hover {
+    background-color: #00ffe5;
+    box-shadow: 16px 16px 16px #0c3376;
+  }
+  
+  @media (max-width: 500px) {
+    .conspiracy-list {
+      justify-content: center;
+    }
+    .card {
+      width: 20rem;
+    }
+    .image {
+      width: 17rem;
+    }
+  }

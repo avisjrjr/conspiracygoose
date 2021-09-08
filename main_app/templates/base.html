@@ -19,8 +19,9 @@
   {% endblock %}
 </head>
 <body>
-  <header>
-    <div class="header-logo-container">
+
+          <header>
+    <div class="alexlogo">
       <a href="/">
         <img 
           src="{% static 'images/alexlogo1.png' %}" 
@@ -45,8 +46,41 @@
       </nav>
      </header>
   <main>
+  
     {% block content %}
     {% endblock %}
   </main>
+
+  {% comment %} <header>
+    <div class="alexlogo">
+      <a href="/">
+        <img 
+          src="{% static 'images/alexlogo1.png' %}" 
+          alt="trutherjones"
+        >
+      </a>
+    </div>
+ <nav>
+        <ul>
+          {% if user.is_authenticated %}
+          <div class='navbar'>
+            <li><a href="{% url 'conspiracy_create' %}">Spread the Truth</a></li>
+            <li><a href="{% url 'logout' %}">Become a Sheep</a></li>
+            <li><a href="{% url 'list' %}">List of Truths</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+
+          {% else %}
+            <li><a href="{% url 'signup' %}">Open your eyes!</a></li>
+            <li><a href="{% url 'home' %}">Login</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+          </div>
+          {% endif %}
+        </ul>
+      </nav>
+     </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main> {% endcomment %}
 </body>
 </html>

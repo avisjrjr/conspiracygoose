@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block head %}
-<link rel="stylesheet" type='text/css' href="{% static 'css/home.css' %}">
+<link rel="stylesheet" type='text/css' href="{% static 'css/list.css' %}">
 {% endblock head %}
 {% block content %}
 <div class='header'>
@@ -13,8 +13,8 @@
     <a href="{% url 'conspiracy_detail' conspiracy.id %}">
       <div class='card'>
           <div>
-            {% if conspiracy.photo.url %}
-              <img class='image' src="{{ conspiracy.photo.url }}" alt="">
+            {% if conspiracy.pic.url %}
+              <img class='image' src="{{ conspiracy.pic.url }}" alt="">
             {% else %}
               <img class='image' src="" alt="">
             {% endif %}

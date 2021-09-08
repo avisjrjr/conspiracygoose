@@ -44,7 +44,8 @@ def about(request):
 
 def conspiracy_detail(request, pk):
   conspiracy = Conspiracy.objects.get(id = pk)
-  return render(request, 'conspiracy/conspiracy_detail.html', {'conspiracy': conspiracy})
+  return render(request, 'conspiracy/conspiracy_detail.html', 
+  {'conspiracy': conspiracy})
 
 @login_required
 def add_pic(request, pk):
@@ -67,7 +68,7 @@ def add_pic(request, pk):
 
 class ConspiracyCreate(LoginRequiredMixin, CreateView):
   model = Conspiracy
-  fields=['title', 'description']
+  fields=['title', 'description' ]
 
   def form_valid(self, form):
     form.instance.author = self.request.user

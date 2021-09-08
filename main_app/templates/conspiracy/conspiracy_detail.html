@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type='text/css' href="{% static 'css/detail.css' %}">
+{% endblock head %}
+{% block content %}
+  <section class='main-section'>
+  <div class='conspiracy-container'>
+    {% if conspiracy.pic %}
+    <img class='conspiracy-img'src="{{ conspiracy.pic.url }}" alt="A conspiracy">
+    {% else %}
+    
+    {% endif %}
+  </div>
+  {% if conspiracy.author == user %}
+    <section class='editing-sect'>
+      <h3 class='pic-change-header'>Add photo evidence</h3>
+        <p id="file-name"></p>
+        <form 
+          action="{% url 'add_pic' conspiracy.id %}"
+          enctype="multipart/form-data"
+          method="POST"
+        >
+          {% csrf_token %}
+          <label class="image-label">
+            Select an Image to Upload Here
+            <input type="file" name="pic-file" id="file-input">
+            <br>
+          </label>
+          <button type="submit" class="btn-submit-pic">Upload photo</button>
+        </form>
+      <div class='edit-div'>
+        <a href="{% url 'conspiracy_update' conspiracy.id %}">
+        <button class='edit'>
+        Edit
+        </button>
+        </a>
+        <a href="{% url 'conspiracy_delete' conspiracy.id %}">
+        <button class='delete'>
+        Delete
+        </button>
+        </a>
+      </div>
+    </section>
+  {% endif %}
+  <div class='conspiracy-text-div'>
+    <div class='conspiracy-text'>
+      <h1 class='conspiracy-title'>{{ conspiracy.title }}</h1>
+      <p class='conspiracy-desc'>{{ conspiracy.description }}</p>
+      <p class='conspiracy-author'>Written By: {{ conspiracy.author }}</p>
+      <p class='conspiracy-date'>Posted On: {{ conspiracy.date }}</p>
+    </div>
+  </div>
+
+  </section>
+{% endblock content %}
