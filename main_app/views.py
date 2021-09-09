@@ -90,3 +90,4 @@ class ConspiracyDelete(LoginRequiredMixin, DeleteView):
 # def home(request):
 #   return render(request, 'home.html')
 
+# nothing
