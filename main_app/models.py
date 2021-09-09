@@ -4,7 +4,6 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from django.utils.timezone import now
 
-# Create your models here.
 class Conspiracy(models.Model):
   title = models.CharField(max_length=50)
   description = models.TextField(max_length=500000)

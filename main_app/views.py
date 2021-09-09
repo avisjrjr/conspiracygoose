@@ -83,11 +83,4 @@ class ConspiracyDelete(LoginRequiredMixin, DeleteView):
   model = Conspiracy
   success_url = '/'
 
-# @login_required
-# class Home(ListView):
-#   model= Conspiracy
-
-# def home(request):
-#   return render(request, 'home.html')
-
 # nothin
