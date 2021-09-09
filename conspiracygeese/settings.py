@@ -129,7 +129,7 @@ LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'list'
 LOGOUT_REDIRECT_URL = 'home'
 
-# import django_heroku
-# django_heroku.settings(locals())
+import django_heroku
+django_heroku.settings(locals())
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
