@@ -40,10 +40,11 @@ Conspiracy Goose is an app where you can post your very own conspiracy theory. I
 - Follow profiles
 
 ## Shoutouts!
-- Of course to the instructors, where would I be if it weren't for you. And David Stinson, thanks for the help with CSS 😘
+- Of course to the instructors, where would I be if it weren't for you? And David Stinson, thanks for the help with CSS 😘
 - Everyone who I used a picture for.
 - What the dog doing?
-- Always TA Squad, don't think I forgot about you ❤️
+- Always TA Squad, don't think I forgot about you ❤️ 
+- Ziggy, Big Nick, Pastor Cuff, Don Cheech, Bo, CamRON, the young man Blake
 
 ## About Me
 ### Avis L. Nesbitt Jr
