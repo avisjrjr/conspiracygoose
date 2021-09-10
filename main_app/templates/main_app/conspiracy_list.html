@@ -19,7 +19,7 @@
               <img class='image' src="" alt="">
             {% endif %}
             <h2 class='conspiracy-title'>{{ conspiracy.title }}</h2>
-            <p class='conspiracy-desc'>{{ conspiracy.description }}</p>
+            {% comment %} <p class='conspiracy-desc'>{{ conspiracy.description }}</p> {% endcomment %}
             <p class='conspiracy-author'>Written By: {{ conspiracy.author }}</p>
             <p class='conspiracy-date'>Posted On: {{ conspiracy.date }}</p>
           </div>
