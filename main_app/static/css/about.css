@@ -1,0 +1,22 @@
+.about-title {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.about {
+    font-size: 20px;
+    text-align: center;
+}
+
+.ben {
+    padding: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.truth {
+    text-align: center;
+}
+

@@ -1,18 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
-
-
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}"/>
+{% endblock head %}
 {% block content %}
-
+<div class="about-title">
 <h1>What you need to know about the TRUTH!</h1>
-
+</div>
+<div class="about">
 <p class="about">
   Bird watching goes both ways. Birds. Aren't. Real. Wake up people! The last bird died in 1985!
 <br>
   Someone is trying to silence the truth and I just can't let that happen.
 </p>
-    <img src="{% static 'images/ben.png' %}" alt="ben">
-  <br>
+</div>
+    <img src="{% static 'images/ben.png' %}" alt="ben" class="ben">
+<div class="truth">
 A fellow truther
+</div>
+
+
+
 
 {% endblock %}

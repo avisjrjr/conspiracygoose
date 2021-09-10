@@ -1,0 +1,20 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+}
+
+.truth-container {
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    margin: 20px;
+}
