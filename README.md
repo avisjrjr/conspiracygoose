@@ -20,9 +20,11 @@ Conspiracy Goose is an app where you can post your very own conspiracy theory. I
 
 
 ## Screenshot(s)
-![Screenshot 1](https://i.imgur.com/iR6AKfk.png)
-![Screenshot 2](https://i.imgur.com/sxb3ZVV.png)
-![Screenshot 3](https://i.imgur.com/Jno1sP0.png)
+![Screenshot 1](https://i.imgur.com/hdv4YlO.png)
+![Screenshot 2](https://i.imgur.com/9oCr90q.png)
+![Screenshot 3](https://i.imgur.com/7cCfm4w.png)
+![Screenshot 4](https://i.imgur.com/DC2AAaA.png)
+
 
 
 ## Technologies Used
