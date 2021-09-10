@@ -1,4 +1,4 @@
-# ✨ Conspiracy Goose ✨
+# 👽 Conspiracy Goose 👽 
 
 There is a strange species of bird I always see in my backyard. It doesn't make a natural bird noise and it always watches me. I live in a constant state of fear and misery. Is that bird even real? 
 
