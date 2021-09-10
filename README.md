@@ -32,6 +32,7 @@ Conspiracy Goose is an app where you can post your very own conspiracy theory. I
 - Python
 - HTML5
 - CSS
+- Amazon S3/AWS
 
 ## Next Steps
 - Add comments
